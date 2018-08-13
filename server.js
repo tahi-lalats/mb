@@ -1,13 +1,13 @@
 const Discord = require ("discord.js");
 const client = new Discord.Client();
 const DBL = require("dblapi.js");
-const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ2NDUxMTg3MDk5MzQzMjU3OCIsImJvdCI6dHJ1ZSwiaWF0IjoxNTMxODUzNDQxfQ.V2BMtiUxo73B9hop1J8-JGv66koFNgCogbZPAHOjcWo', client);
+const dbl = new DBL(process.env.DBL_TOKEN, client);
 const config = require("./config.json");
 const Youtube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const allowedUsers = config.allowedUsers;
 const roles = config.roleToDisco;
-const youtube =  new Youtube("AIzaSyChN9LjaACQp7kIupPCn86au7nPamAAtGA");
+const youtube =  new Youtube(process.env.GAK);
 const express = require('express');
 const http = require('http');
 const fs = require('fs');
@@ -1151,4 +1151,4 @@ console.log(message.author.username + " Searched the Skin: " + search)
 
       
 
-    client.login(config.token);
+    client.login(process.env.TOKEN);
