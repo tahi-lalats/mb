@@ -1,0 +1,7 @@
+{ 
+    "token"  : " ",
+  "ms" : 1200,
+    "roleToDisco" : ["Co Leader"],
+    "prefix" : "^",
+    "allowedUsers" : ["335035386923581440"]
+  }
