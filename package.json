@@ -5,7 +5,7 @@
   "name": "trap-nation",
   "version": "2.4.4",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "author": "_Brickmaster_#0218",
+  "author": "Brickmaster#2000",
   "main": "server.js",
   "scripts": {
     "start": "node shard.js"
