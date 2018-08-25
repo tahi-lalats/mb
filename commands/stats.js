@@ -34,7 +34,7 @@ exports.run = async (client, msg, args, tools, map) => {
         .addField("Advanced Stats:", `• ${servers} Servers \n• ${users} Users \n• ${client_channel} Channels`, true)
         .addField("Bot Informations:", `• Bot Developer: ${owner} \n• Bot Version: ${packages.version}`, true)
 	
-	.addField("Usefull Links", "[Invite Me](https://discordapp.com/oauth2/authorize?client_id=471150809196003328&scope=bot&permissions=2146958591) | [Vote](https://discordbots.org/bot/464511870993432578/vote) | [Support Server](https://discord.io/MasterBot)") 
+	.addField("Usefull Links", "[Invite Me](https://discordapp.com/oauth2/authorize?client_id=471150809196003328&scope=bot&permissions=2146958591) | [Vote](https://discordbots.org/bot/464511870993432578/vote) | [Support Server](https://discord.io/MasterBot) | [Website](http://masterbot.esy.es)") 
 
         msg.channel.send(statembed);	
 	};
