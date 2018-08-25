@@ -29,6 +29,7 @@ exports.run = async (client, message, args, tools, map) => {
     .addBlankField()
     .addField("_**Vote for this bot**_","[Vote](https://discordbots.org/bot/464511870993432578/vote)", true)
     .addField("_**Join Support Server**_","[Join](https://discord.gg/JYwQVjT)", true)
+    .addField("_**Website**_",'[Click Here](http://masterbot.esy.es)')
     .setFooter(`© MasterBotTeam`)
     .setTimestamp()
     message.channel.send({embed})
