@@ -30,7 +30,8 @@ try {
     .addBlankField()
     .addField("_**Vote for this bot**_","[Vote](https://discordbots.org/bot/464511870993432578/vote)", true)
     .addField("_**Join Support Server**_","[Join](https://discord.gg/JYwQVjT)", true)
-    .setFooter(`©MasterBot V0.4.4`)
+    .addField("_**Website**_",'[Click Here](http://masterbot.esy.es/en)')
+    .setFooter(`© MasterBotTeam`)
     .setTimestamp() // SHOWS THE TIME OF THE EMBED CREATED
     await message.author.send({embed})
     message.react("✅")
