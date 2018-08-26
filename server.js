@@ -813,6 +813,23 @@ client.on('message', message => {
         });
       });
   }
+	
+	  if (message.content.startsWith(prefix + 'kidslapped')) {
+  var voiceChannel = message.member.voiceChannel;
+  var yt = require('ytdl-core');
+    if (!voiceChannel) {
+      return message.reply(`Please be in a voice channel first!`);
+    }
+    message.channel.sendMessage('Hem :v')
+    voiceChannel.join()
+      .then(connnection => {
+        let stream = yt("https://www.youtube.com/watch?v=pOeig6_aAtE", {audioonly: true});
+        const dispatcher = connnection.playStream(stream);
+        dispatcher.on('end', () => {
+          voiceChannel.leave();
+        });
+      });
+  }
 });
 client.on('message', message => {
   if (message.content.startsWith(prefix + 'airhorn')) {
