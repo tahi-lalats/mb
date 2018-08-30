@@ -415,6 +415,19 @@ console.log(`${timestamp("ReadyBot")} Bot has successfully deployed!`);
 // [01-01-2001|10:10:10] [ReadyBot] Bot has successfully deployed!
 
 console.log(`${timestamp("ErrorOccured")} Hmm, there was something missing!`);
+	    
+	        let msg = message.content.toLowerCase();
+    let args = message.content.slice(prefix.length).trim().split(" ");
+    let cmd = args.shift().toLowerCase();
+
+   if (!msg.startsWith(prefix)) return;
+   if (commandcooldown.has(message.author.id)) {
+      return message.channel.send(`Please wait **5 seconds** cooldown...`).then(msg => msg.delete(2000));
+      }
+      commandcooldown.add(message.author.id);
+      setTimeout(() => {
+        commandcooldown.delete(message.author.id);
+      }, 5000);
 
 
 
