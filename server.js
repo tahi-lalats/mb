@@ -77,6 +77,7 @@ client.on("ready", () => {
 
 
     client.on("message", async message => {
+	    var prefix = '^'
       // This event will run on every single message received, from any channel or DM.
       
       // It's good practice to ignore other bots. This also makes your bot ignore itself
@@ -415,7 +416,6 @@ console.log(`${timestamp("ReadyBot")} Bot has successfully deployed!`);
 // [01-01-2001|10:10:10] [ReadyBot] Bot has successfully deployed!
 
 console.log(`${timestamp("ErrorOccured")} Hmm, there was something missing!`);
-	    let prefix = '^'
 	    
 
    if (!message.startsWith(prefix)) return;
