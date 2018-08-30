@@ -77,7 +77,6 @@ client.on("ready", () => {
 
 
     client.on("message", async message => {
-	    var prefix = '^'
       // This event will run on every single message received, from any channel or DM.
       
       // It's good practice to ignore other bots. This also makes your bot ignore itself
@@ -416,16 +415,7 @@ console.log(`${timestamp("ReadyBot")} Bot has successfully deployed!`);
 // [01-01-2001|10:10:10] [ReadyBot] Bot has successfully deployed!
 
 console.log(`${timestamp("ErrorOccured")} Hmm, there was something missing!`);
-	    
 
-   if (!message.startsWith(prefix)) return;
-   if (commandcooldown.has(message.author.id)) {
-      return message.channel.send(`Please wait **5 seconds** cooldown...`).then(msg => msg.delete(2000));
-      }
-      commandcooldown.add(message.author.id);
-      setTimeout(() => {
-        commandcooldown.delete(message.author.id);
-      }, 5000);
 
 
 
