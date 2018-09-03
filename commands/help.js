@@ -21,6 +21,8 @@ try {
     .addBlankField()
     .addField("**ℹ️ Master Bot Information**", "`info`  `changelog | clog | log`  `dev`  `help`  `helphere`  `invite`  `ping`  `vote`", true)
     .addField("**🎶 Music**", "`play`  `pause`  `stop`  `resume`  `queue`  `np`  `volume`  `skip`", true)
+    .addField("**:moneybag: Economy", "`credit`  `pay`  `slot`  `redeem`")
+    .addField("**:card_index: Social**", "`background`  `badges`  `bio`  `daily`  `profile`  `rep`  `title`")
     .addField("**🎉 Fun**", "`8ball`  `cat`  `cry`  `dog`  `flip`  `givecandy`  `hug`  `jokes`\
    `kiss`  `lucknumber`  `rps`  `pat`  `quiz`  `poll`  `rainbow`  `rolldice`  `say`  `slap`", true)
     .addField("**🔊 Soundboard**", "`airhorn`  `clap`  `cena`  `duck`  `pip`  `sad`  `troll`  `trombone`")
